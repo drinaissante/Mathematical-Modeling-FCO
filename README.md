@@ -61,6 +61,9 @@ If MATLAB cannot find files inside subfolders (e.g., `src`), add the project dir
 ```matlab
 addpath(genpath(pwd))
 main
+```
+
+---
 
 ## Optional - Install MATLAB
 
