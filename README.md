@@ -5,18 +5,19 @@ A MATLAB project repository. This README explains how to install the required to
 ---
 
 ## Table of Contents
+
 - [Mathematical-Modeling-FCO (MATLAB)](#mathematical-modeling-fco-matlab)
   - [Table of Contents](#table-of-contents)
   - [Optional - Prerequisites](#optional---prerequisites)
+  - [Recommended - Download This Repository (ZIP)](#recommended---download-this-repository-zip)
+  - [Recommended - Run the Project in MATLAB](#recommended---run-the-project-in-matlab)
+    - [Method 1 — Set Folder and Run `main.m`](#method-1--set-folder-and-run-mainm)
+    - [Method 2 — Add Project Folder to Path (if needed)](#method-2--add-project-folder-to-path-if-needed)
   - [Optional - Install MATLAB](#optional---install-matlab)
   - [Optional - Install Visual Studio Code (VS Code)](#optional---install-visual-studio-code-vs-code)
   - [Optional - Install the MATLAB Extension in VS Code](#optional---install-the-matlab-extension-in-vs-code)
     - [Choice A — Install from the Extensions panel](#choice-a--install-from-the-extensions-panel)
     - [Choice B — Install from the Marketplace page](#choice-b--install-from-the-marketplace-page)
-  - [Recommended - Download This Repository (ZIP)](#recommended---download-this-repository-zip)
-  - [Recommended - Run the Project in MATLAB](#recommended---run-the-project-in-matlab)
-    - [Method 1 — Set Folder and Run `main.m`](#method-1--set-folder-and-run-mainm)
-    - [Method 2 — Add Project Folder to Path (if needed)](#method-2--add-project-folder-to-path-if-needed)
 
 ---
 
@@ -25,6 +26,41 @@ A MATLAB project repository. This README explains how to install the required to
 - Visual Studio Code (VS Code)
   - Installed MATLAB extension
 ---
+---
+
+## Recommended - Download This Repository (ZIP)
+
+The code can be downloaded using GitHub's Download ZIP:
+
+1. Find and click the green **`<> Code`** button.
+2. Click **Download ZIP**.
+3. Extract/unzip the downloaded file to a folder on your computer.
+
+You should end up with a project folder containing files such as:
+- `src/` (source folder)
+- `src/resources/` (resources folder for data)
+- `src/main.m` (main class (file))
+
+---
+
+## Recommended - Run the Project in MATLAB
+
+### Method 1 — Set Folder and Run `main.m`
+1. Open **MATLAB**
+2. In MATLAB, click **Home → Open** (or use the Current Folder panel)
+3. Navigate to the extracted repository folder
+4. Ensure MATLAB’s **Current Folder** is set to the project root (the folder that contains `main.m`)
+5. Run:
+   - Click **Run** (green triangle) while `main.m` is open, or type in the Command Window:
+     ```matlab
+     main
+     ```
+
+### Method 2 — Add Project Folder to Path (if needed)
+If MATLAB cannot find files inside subfolders (e.g., `src`), add the project directory:
+```matlab
+addpath(genpath(pwd))
+main
 
 ## Optional - Install MATLAB
 
@@ -86,38 +122,4 @@ There are two common ways to install extensions:
 
 > After installing, you may need to reload VS Code for the extension to activate.
 
----
 
-## Recommended - Download This Repository (ZIP)
-
-The code can be downloaded using GitHub's Download ZIP:
-
-1. Find and click the green **`<> Code`** button.
-2. Click **Download ZIP**.
-3. Extract/unzip the downloaded file to a folder on your computer.
-
-You should end up with a project folder containing files such as:
-- `src/` (source folder)
-- `src/resources/` (resources folder for data)
-- `src/main.m` (main class (file))
-
----
-
-## Recommended - Run the Project in MATLAB
-
-### Method 1 — Set Folder and Run `main.m`
-1. Open **MATLAB**
-2. In MATLAB, click **Home → Open** (or use the Current Folder panel)
-3. Navigate to the extracted repository folder
-4. Ensure MATLAB’s **Current Folder** is set to the project root (the folder that contains `main.m`)
-5. Run:
-   - Click **Run** (green triangle) while `main.m` is open, or type in the Command Window:
-     ```matlab
-     main
-     ```
-
-### Method 2 — Add Project Folder to Path (if needed)
-If MATLAB cannot find files inside subfolders (e.g., `src`), add the project directory:
-```matlab
-addpath(genpath(pwd))
-main
