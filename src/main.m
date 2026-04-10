@@ -74,8 +74,8 @@ for run = 1:numRuns
     %% --- Show Results ---
     create_graph(run, expandedPath, nodeNames, costMatrix, positions, expandedEdges, totalDist);
 
-    bestFullRoute{run} = fullRoute; % store the route for this run
-    bestDistances(run) = totalDist; % store the distance for this run
+    bestFullRoute{run} = fullRoute; % (tracking) store the route for this run
+    bestDistances(run) = totalDist; % (tracking)store the distance for this run
 end
 
 %% --- Final Best Route (of all runs) ---
@@ -83,5 +83,3 @@ end
 bestRoute = bestFullRoute{bestRun};
 
 show_route(G, bestRun, bestRoute, bestDist, true);
-
-
