@@ -1,15 +1,15 @@
 %% Traveling Salesperson (TSP) with Genetic Algorithm (GA)
 
 % import folder to find functions for GA
-addpath('genetic_algorithm\');
-
+addpath('genetic_algorithm/');
+addpath(genpath('pwd'));
 
 %% --- Load cost / adjacency matrix ---
-rawData = readmatrix('AdjacencyMatrix.csv','NumHeaderLines',1);
+rawData = readmatrix('resources/AdjacencyMatrix.csv', 'NumHeaderLines', 1);
 costMatrix = rawData(:,2:end);   % remove first column (header)
 
 %% --- Setting up nodes ---
-houses = {'H2','H3','H4','H5','H6','H7','H8','H9','H10','H11', 'H12', 'H13', 'H14', 'H16', 'H17'}; % required visits
+houses = {'H2', 'H3', 'H4', 'H5', 'H6', 'H7', 'H8', 'H9', 'H10', 'H11', 'H12', 'H13', 'H14', 'H16', 'H17'}; % required visits
 numHouses = numel(houses);
 
 % get the G (graph), node positions, house matrix, names of the nodes of the graph
@@ -19,8 +19,6 @@ numHouses = numel(houses);
 calcDistance = @(order) ...
     sum(arrayfun(@(k) houseMatrix(order(k), order(k + 1)), 1:length(order) - 1)) + ...
     houseMatrix(order(end), order(1));
-
-
 %% --- Genetic Algorithm Parameters ---
 populationSz = 50;
 mutationRate = 0.05; % mutation probability
