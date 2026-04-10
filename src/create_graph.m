@@ -32,5 +32,5 @@ end
 % highlight the matching route
 highlight(h2, 1:length(subIdx),'NodeColor','r','MarkerSize',7);
 
-title(sprintf('Run %d Clean Expanded Route (fixed positions), Distance = %.2f', run, totalDist));
+title(sprintf('Run %d, Distance = %.2f', run, totalDist));
 end
