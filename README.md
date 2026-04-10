@@ -12,8 +12,7 @@ However, you may follow the [recommended](#recommended---download-this-repositor
   - [Table of Contents](#table-of-contents)
   - [Recommended - Download This Repository (ZIP)](#recommended---download-this-repository-zip)
   - [Recommended - Run the Project in MATLAB](#recommended---run-the-project-in-matlab)
-    - [Method 1 — Set Folder and Run `main.m`](#method-1--set-folder-and-run-mainm)
-    - [Method 2 — Add Project Folder to Path (if needed)](#method-2--add-project-folder-to-path-if-needed)
+    - [Step 1 — Upload the Folder `main.m`](#step-1--upload-the-folder-mainm)
   - [Optional - Prerequisites](#optional---prerequisites)
   - [Optional - Install MATLAB](#optional---install-matlab)
   - [Optional - Install Visual Studio Code (VS Code)](#optional---install-visual-studio-code-vs-code)
@@ -36,23 +35,17 @@ You should end up with a project folder containing files such as:
 
 ## Recommended - Run the Project in MATLAB
 
-### Method 1 — Set Folder and Run `main.m`
-1. Open **MATLAB**
-2. In MATLAB, click **Home → Open** (or use the Current Folder panel)
-3. Navigate to the extracted repository folder
-4. Ensure MATLAB’s **Current Folder** is set to the project root (the folder that contains `main.m`)
-5. Run:
-   - Click **Run** (green triangle) while `main.m` is open, or type in the Command Window:
+### Step 1 — Upload the Folder `main.m`
+1. Extract the downloaded `Mathematical-Modeling-FCO-main.zip` file.
+2. Open **MATLAB**
+3. In MATLAB, click **Home → Open** (or use the Current Folder panel)
+4. Upload the extracted `Mathematical-Modeling-FCO-main` folder.
+5. Ensure MATLAB’s **Current Folder** is set to the project root (the folder that contains `main.m`)
+6. Run:
+   - Click **Run** while `main.m` is open, or type in the Command Window:
      ```matlab
      main
      ```
-
-### Method 2 — Add Project Folder to Path (if needed)
-If MATLAB cannot find files inside subfolders (e.g., `src`), add the project directory:
-```matlab
-addpath(genpath(pwd))
-main
-```
 
 ---
 
