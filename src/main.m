@@ -24,7 +24,7 @@ populationSz = 50;
 mutationRate = 0.05; % mutation probability
 numGenerations = 600; % iteration for GA
 
-numRuns = 5; % number of GA runs
+numRuns = 10; % number of GA runs
 maxCapacity = 15; % maximum houses per run
 
 %% --- Tracking for best ---

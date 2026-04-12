@@ -33,14 +33,17 @@ You should end up with a project folder containing files such as:
 ## Recommended - Run the Project in MATLAB
 1. Extract the downloaded `Mathematical-Modeling-FCO-main.zip` file.
 2. Open **MATLAB**
-3. In MATLAB, click **Home → Open** (or use the Current Folder panel)
+3. Right click on the `Files` panel, then click `Upload Folders`.
 4. Upload the extracted `Mathematical-Modeling-FCO-main` folder.
 5. Ensure MATLAB’s **Current Folder** is set to the project root (the folder that contains `main.m`)
-6. Run:
+6. Expand (or open) the `Mathematical-Modeling-FCO-main` folder, find `src` and open it as well.
+7. Double click on `main.m` to open.
+8. Run:
    - Click **Run** while `main.m` is open, or type in the Command Window:
      ```matlab
      main
      ```
+   > If a popup opens that says /MATLAB Drive/Mathematical-Modeling-FCO-main/src/main.m is not found in the current folder or on the MATLAB path, click on `Change Folder` and it will run automatically.
 
 ---
 
