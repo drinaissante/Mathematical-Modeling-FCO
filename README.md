@@ -12,11 +12,7 @@ However, you may follow the [recommended](#recommended---download-this-repositor
   - [Table of Contents](#table-of-contents)
   - [Recommended - Download This Repository (ZIP)](#recommended---download-this-repository-zip)
   - [Recommended - Run the Project in MATLAB](#recommended---run-the-project-in-matlab)
-    - [Step 1 — Upload the Folder `main.m`](#step-1--upload-the-folder-mainm)
-  - [Optional - Prerequisites](#optional---prerequisites)
-  - [Optional - Install MATLAB](#optional---install-matlab)
-  - [Optional - Install Visual Studio Code (VS Code)](#optional---install-visual-studio-code-vs-code)
-  - [Optional - Run MATLAB on VS Code](#optional---run-matlab-on-vs-code)
+  - [Optional - Using MATLAB in VS Code](#optional---using-matlab-in-vs-code)
 
 ---
 
@@ -35,8 +31,6 @@ You should end up with a project folder containing files such as:
 ---
 
 ## Recommended - Run the Project in MATLAB
-
-### Step 1 — Upload the Folder `main.m`
 1. Extract the downloaded `Mathematical-Modeling-FCO-main.zip` file.
 2. Open **MATLAB**
 3. In MATLAB, click **Home → Open** (or use the Current Folder panel)
@@ -50,15 +44,13 @@ You should end up with a project folder containing files such as:
 
 ---
 
-## Optional - Prerequisites
-- Installed MATLAB on your system
-- Visual Studio Code (VS Code)
+## Optional - Using MATLAB in VS Code
+**Prerequisites**:
+  - Installed MATLAB on your system
+  - Visual Studio Code (VS Code)
   - Installed MATLAB extension
 
----
-
-## Optional - Install MATLAB
-
+**Step 1: Install MATLAB**
 1. Go to the official MathWorks MATLAB page:
    - https://www.mathworks.com/products/matlab.html
 
@@ -71,10 +63,8 @@ You should end up with a project folder containing files such as:
    - Follow the on-screen instructions.
    - Sign in / activate using your license.
    - Finish installation.
-
----
-
-## Optional - Install Visual Studio Code (VS Code)
+  
+**Step 2: Install VS Code**
 
 1. Download VS Code:
    - https://code.visualstudio.com/
@@ -93,9 +83,9 @@ You should end up with a project folder containing files such as:
 
 5. Search for `MATLAB` and install it (published by MathWorks).
 
-## Optional - Run MATLAB on VS Code
+**Step 3: Run MATLAB on VS Code**
 1. Open VS Code.
-2. Press Ctrl + K and Ctrl + O to browse for the extracted repository folder.
+2. Press `Ctrl + K` and `Ctrl + O` to browse for the extracted repository folder.
 3. Open the extracted folder, `Mathematical-Modeling-FCO-main` (or similar), and wait until it loads.
 4. Find the `src` folder and open `main.m`.
 5. While `main.m` is opened on your VS Code, press F5 or type in the TERMINAL:
